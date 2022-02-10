@@ -2,7 +2,7 @@
 <html>
     <head>
       <meta charset="UTF-8">
-      <title> HTML Challenges </title>
+      <title> HTML Challenges Remix</title>
       <style type="text/css">
       .tg  {border-collapse:collapse;border-spacing:0;}
       .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:24px;
@@ -117,18 +117,18 @@
         <input type="text" id="fname" name="fname" ><br>
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" name="lname" ><br><br>
-        <p id="demo" onclick="myFunction()">Click me to change my text color.</p>
-        <script>
-        function myFunction() {
-            document.getElementById("demo").style.color = "red";
-        }
-        </script>
         <label for="favcolor">Favorite color:</label><br>
         <input type="color" id="favcolor" name="favcolor"><br><br>
+        <p id="demo" onclick="myFunction()">After selecting a color, click here!</p>
+        <script>
+        function myFunction() {
+            document.getElementById("demo").style.color = "favcolor";
+        }
+        </script>
         <input type="submit" value="Submit">
         <input type="reset">
         </form>
-  
+
       <div style="font-family:verdana">
         <h2>Challenge 4: A Google Search Page </h2>
         <p style="color:#808080;"> About 1,530,000,000 results (0.59 seconds)  <p>
@@ -223,6 +223,8 @@
       </div>
       <div>
         <h2> Part 3: Explore! </h2>
+        <p>
+          For this challenge, I used the "onclick" attribute. I placed this in my form (Challenge 3) as an interactive element to play with color.
       </div>
     </body>
 </html>
