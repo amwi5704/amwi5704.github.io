@@ -118,13 +118,32 @@
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" name="lname" ><br><br>
         <label for="favcolor">Favorite color:</label><br>
-        <input type="color" id="favcolor" name="favcolor"><br><br>
-        <p id="demo" onclick="myFunction()">After selecting a color, click here!</p>
+        <p id="demo" onclick="myFunction()">Need some inspiration?</p>
         <script>
         function myFunction() {
-            document.getElementById("demo").style.color = "favcolor";
+            document.getElementById("demo").style.color = "red";
         }
         </script>
+        <p id="demo2" onclick="myFunction2()">Click these lines of text for some example colors!</p>
+        <script>
+        function myFunction2() {
+            document.getElementById("demo2").style.color = "blue";
+        }
+        </script>
+        <p id="demo3" onclick="myFunction3()">Here is another!</p>
+        <script>
+        function myFunction3() {
+            document.getElementById("demo3").style.color = "orange";
+        }
+        </script>
+        <p id="demo4" onclick="myFunction4()">And finally this one is my favorite color!</p>
+        <script>
+        function myFunction4() {
+            document.getElementById("demo4").style.color = "#BAFF56";
+        }
+        </script>
+        <input type="color" id="favcolor" name="favcolor"><br><br>
+
         <input type="submit" value="Submit">
         <input type="reset">
         </form>
@@ -225,6 +244,7 @@
         <h2> Part 3: Explore! </h2>
         <p>
           For this challenge, I used the "onclick" attribute. I placed this in my form (Challenge 3) as an interactive element to play with color.
+          It is meant to give some inspiration of potential colors to choose as a favorite.
       </div>
     </body>
 </html>
