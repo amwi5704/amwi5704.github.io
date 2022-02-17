@@ -22,3 +22,22 @@ h6 {
 p {
   font-family: "Baskervville";
 }
+
+.button-one {
+border-radius: 40px;
+padding: 15px;
+background-color: #93BDFC;
+}
+
+.button-one:hover {
+  border-radius: 40px;
+  padding: 15px;
+  background-color: #7482FF;
+
+}
+.button-one:onclick {
+  border-radius: 40px;
+  padding: 15px;
+  background-color: #D1B8E5;
+
+}
