@@ -2,41 +2,41 @@ body {
   background-color: powderblue;
 }
 h1 {
-  font-family: "Merriweather Sans";
+  font-family: 'Merriweather Sans', sans-serif;
 }
 h2 {
-  font-family: "Merriweather Sans";
+  font-family: 'Merriweather Sans', sans-serif;
 }
 h3 {
-  font-family: "Merriweather Sans";
+  font-family: 'Merriweather Sans', sans-serif;
 }
 h4 {
-  font-family: "Merriweather Sans";
+  font-family: 'Merriweather Sans', sans-serif;
 }
 h5 {
-  font-family: "Merriweather Sans";
+  font-family: 'Merriweather Sans', sans-serif;
 }
 h6 {
-  font-family: "Merriweather Sans";
+  font-family: 'Merriweather Sans', sans-serif;
 }
 p {
-  font-family: "Baskervville";
+  font-family: 'Baskervville', serif;
 }
 
 .normal-button {
-border-radius: 40px;
+border-radius: 15px;
 padding: 15px;
 background-color: #93BDFC;
 }
 
 .normal-button:hover {
-  border-radius: 40px;
+  border-radius: 15px;
   padding: 15px;
   background-color: #7482FF;
 
 }
-.normal-button:onclick {
-  border-radius: 40px;
+.normal-button:click {
+  border-radius: 15px;
   padding: 15px;
   background-color: #D1B8E5;
 
