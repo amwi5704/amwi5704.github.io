@@ -23,19 +23,19 @@ p {
   font-family: "Baskervville";
 }
 
-.button-one {
+.normal-button {
 border-radius: 40px;
 padding: 15px;
 background-color: #93BDFC;
 }
 
-.button-one:hover {
+.normal-button:hover {
   border-radius: 40px;
   padding: 15px;
   background-color: #7482FF;
 
 }
-.button-one:onclick {
+.normal-button:onclick {
   border-radius: 40px;
   padding: 15px;
   background-color: #D1B8E5;
