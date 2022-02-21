@@ -33,20 +33,36 @@ a:visited {
 }
 
 .normal-button {
-border-radius: 10px;
-  padding: 15px 32px;
+border-radius: 5px;
+  padding: 10px 40px;
 background-color: #93BDFC;
+  font-family: 'Baskervville', serif;
+  font-size: 24px;
 }
 
 .normal-button:hover {
-  border-radius: 10px;
-  padding: 15px 32px;
+  border-radius: 5px;
+  padding: 10px 40px;
   background-color: #7482FF;
+    font-family: 'Baskervville', serif;
+    font-size: 24px;
 
 }
 .normal-button:focus {
-  border-radius: 10px;
-  padding: 15px 32px;
+  border-radius: 5px;
+  padding: 10px 40px;
   background-color: #D1B8E5;
+    font-family: 'Baskervville', serif;
+    font-size: 24px;
 
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 250px;
+}
+
+hr {
+  border-top: 1px solid #6A69A3;
 }
