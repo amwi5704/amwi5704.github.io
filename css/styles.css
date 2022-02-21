@@ -34,7 +34,7 @@ a:visited {
 
 .normal-button {
 border-radius: 5px;
-  padding: 10px 40px;
+  padding: 10px 60px;
 background-color: #93BDFC;
   font-family: 'Baskervville', serif;
   font-size: 24px;
@@ -42,7 +42,7 @@ background-color: #93BDFC;
 
 .normal-button:hover {
   border-radius: 5px;
-  padding: 10px 40px;
+  padding: 10px 60px;
   background-color: #7482FF;
     font-family: 'Baskervville', serif;
     font-size: 24px;
@@ -50,7 +50,7 @@ background-color: #93BDFC;
 }
 .normal-button:focus {
   border-radius: 5px;
-  padding: 10px 40px;
+  padding: 10px 60px;
   background-color: #D1B8E5;
     font-family: 'Baskervville', serif;
     font-size: 24px;
@@ -60,9 +60,10 @@ img {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 250px;
+  width: 100px;
 }
 
 hr {
   border-top: 1px solid #6A69A3;
+  color: #6A69A3;
 }
