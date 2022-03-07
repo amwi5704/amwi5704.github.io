@@ -1,3 +1,4 @@
+
 @media screen and (min-width: 600px) {
   body {
 
@@ -26,7 +27,7 @@
   }
   .box {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1ft;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
 
       background-color: inherit;
@@ -37,6 +38,11 @@
 }
 
 @media screen and (max-width: 599px) {
+  body {
+
+    background-color: #6A69A3;
+  }
+
   .content {
     background-color: #D1B8E5;
   }
@@ -117,7 +123,7 @@ img {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 100%;
+  width: 300px;
   height:auto;
 }
 
