@@ -208,6 +208,14 @@ background-color: #93BDFC;
   font-size: 24px;
 }
 
+.was-clicked {
+  border-radius: 5px;
+  padding: 20px 80px;
+  background-color: #DCF441;
+    font-family: 'Baskervville', serif;
+    font-size: 28px;
+}
+/*
 .normal-button:hover {
   border-radius: 5px;
   padding: 10px 60px;
@@ -223,6 +231,14 @@ background-color: #93BDFC;
     font-family: 'Baskervville', serif;
     font-size: 24px;
 
+}
+*/
+.was-hov {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 10px;
+  height:auto;
 }
 
 
