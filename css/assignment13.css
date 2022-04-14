@@ -1,0 +1,260 @@
+.story {
+  background-image: url("../img/cl2.png");
+  gap: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  border-color: #93BDFC;
+  border-width: 5px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 600px) {
+  body {
+    padding: 60px;
+    background-color: #6A69A3;
+    background-image: url("../img/clo1.png");
+  }
+  img {
+    border: 2px solid #D1B8E5;
+    border-radius: 3px;
+    padding: 5px;
+    width: 400px;
+    height:auto;
+  }
+  .content {
+    background-color: inherit;
+    padding: 50px;
+    grid-column: 1/6;
+    grid-row: 2/5;
+  }
+  .photo {
+      padding: 10px;
+      grid-column: 7/8;
+      grid-row: 1/5;
+  }
+  .photos {
+      padding: 10px;
+      grid-column: 1/8;
+      grid-row: 2/4;
+  justify-content: center;
+  }
+  .photos2 {
+      padding: 10px;
+      grid-column: 1/8;
+      grid-row: 2/8;
+  justify-content: center;
+  }
+
+  .bio{
+    padding: 10px;
+    grid-column: 2/7;
+    grid-row: 4;
+  }
+  .head{
+    padding: 10px;
+    grid-column: 4/6;
+    grid-row: 1/2;
+  }
+  .nav {
+      padding: 10px;
+      grid-column: 1/4;
+      grid-row: 1/2;
+  }
+  .box {
+      display: grid;
+
+        border: 3px solid #6A69A3;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+
+      background-image: url("../img/cl2.png");
+      gap: 10px;
+      padding: 20px;
+  }
+  .box2 {
+      display: grid;
+
+        border: 3px solid #6A69A3;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+
+      background-image: url("../img/cl2.png");
+      gap: 10px;
+      padding: 20px;
+  }
+
+}
+
+@media screen and (max-width: 599px) {
+  body {
+
+      padding: 10px;
+    background-color: #6A69A3;
+    background-image: url("../img/clo1.png");
+
+  }
+
+  img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+    height:auto;
+  }
+  .content {
+    background-color: inherit;
+    padding: 50px;
+    grid-column: 1/5;
+    grid-row: 2/3;
+  }
+  .head{
+    padding: 10px;
+    grid-column: 1/5;
+    grid-row: 2/3;
+  }
+  .photo {
+
+    padding: 10px;
+    grid-column: 1/5;
+    grid-row: 3/8;
+justify-content: center;
+  }
+  .photos {
+      padding: 10px;
+      grid-column: 1/5;
+      grid-row: 4/8;
+  justify-content: center;
+  }
+  .photos2 {
+      padding: 10px;
+      grid-column: 1/5;
+      grid-row: 3/8;
+  justify-content: center;
+  }
+  .nav {
+
+        padding: 10px;
+        grid-column: 1/4;
+        grid-row: 1/2;
+  }
+  .box {
+    display: grid;
+
+          background-image: url("../img/cl2.png");
+      border: 3px solid #6A69A3;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      padding: 20px;
+  }
+  .box2 {
+    display: grid;
+
+          background-image: url("../img/cl2.png");
+      border: 3px solid #6A69A3;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      padding: 20px;
+  }
+  .bio{
+    padding: 10px;
+    grid-column: 1/5;
+    grid-row: 3/4;
+  }
+}
+
+h1 {
+  color: #3e2d57;
+
+  font-size: 40px;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+h2 {
+  color: #3e2d57;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+h3 {
+  color: #3e2d57;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+h4 {
+  color: #3e2d57;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+h5 {
+  color: #6A69A3;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+h6 {
+  color: #3e2d57;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+p {
+  color: #6A69A3;
+  border-radius: 5px;
+  border-color: #93BDFC;
+  border-width: medium;
+  font-family: 'Baskervville', serif;
+}
+a:link {
+  color: #93BDFC;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+a:hover {
+  color: #7482FF;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+a:visited {
+  color: #D1B8E5;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.normalButton {
+border-radius: 5px;
+  padding: 5px 30px;
+background-color: #93BDFC;
+  font-family: 'Baskervville', serif;
+  font-size: 18px;
+}
+
+.was-clicked {
+  border-radius: 5px;
+  padding: 20px 80px;
+  background-color: #DCF441;
+    font-family: 'Baskervville', serif;
+    font-size: 28px;
+}
+
+.normalButton:hover {
+  border-radius: 5px;
+  padding: 5px 30px;
+  background-color: #7482FF;
+    font-family: 'Baskervville', serif;
+    font-size: 18px;
+
+}
+
+.was-hov {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 10px;
+  height:auto;
+}
+
+
+hr {
+  border-top: 1px solid #6A69A3;
+  color: #6A69A3;
+}
