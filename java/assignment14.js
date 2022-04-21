@@ -52,6 +52,7 @@ console.log('Problem 4', totalSalary);
 for (let i = 0; i < employees.length; i++) {
   if (employees[i].raise === true){
     employees[i].salary = employees[i].salary *1.1;
+    employees[i].raise = false;
   }
 }
 console.log('Problem 5', employees);
