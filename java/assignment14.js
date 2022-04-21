@@ -58,7 +58,7 @@ for (let i = 0; i < employees.length; i++) {
 console.log('Problem 5', employees);
 
 // Problem 6
-let workingFromHome = ['Anna', 'Sam'];
+const workingFromHome = ['Anna', 'Sam'];
 for (let i = 0; i < employees.length; i++) {
   if (workingFromHome.includes(employees[i].firstName)){
     employees[i].wfh = true;
