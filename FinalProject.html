@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="../css/assignment13.css" type="text/css">
-    <script defer src="../java/assignment13.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="./FinalProject.css" type="text/css">
+    <script defer src="./FinalProject.js" charset="utf-8" async></script>
 
-    <title>Silly story generator</title>
+    <title>Genshin Artifact Simulatior</title>
 
     <style>
 
@@ -43,17 +43,137 @@
   </head>
 
   <body>
+    <div class='atype'>
+      <label for="feather">Feather</label><input id="feather" type="radio" name="atype" value="feather">
+      <label for="flower">Flower</label><input id="flower" type="radio" name="atype" value="flower">
+      <label for="sands">Sands</label><input id="sands" type="radio" name="atype" value="sands">
+      <label for="goblet">Goblet</label><input id="goblet" type="radio" name="atype" value="goblet">
+      <label for="hat">Hat</label><input id="hat" type="radio" name="atype" value="hat">
+    </div>
+    <div class=mainsS>
+      <label for="atkp">ATK%</label><input id="atkp" type="radio" name="mainSS" value="ATK %" >
+      <label for="hpp">HP%</label><input id="hpp" type="radio" name="mainSS" value="HP %">
+      <label for="defp">DEF%</label><input id="defp" type="radio" name="mainSS" value="DEF %">
+      <label for="emf">EM</label><input id="emf" type="radio" name="mainSS" value="Elemental Mastery" >
+      <label for="erp">ER%</label><input id="erp" type="radio" name="mainSS" value="Energy Recharge %">
+    </div>
+    <div class=mainsG>
+      <label for="atkp">ATK%</label><input id="atkp" type="radio" name="mainSG" value="ATK %" >
+      <label for="hpp">HP%</label><input id="hpp" type="radio" name="mainSG" value="HP %">
+      <label for="defp">DEF%</label><input id="defp" type="radio" name="mainSG" value="DEF %">
+      <label for="emf">EM</label><input id="emf" type="radio" name="mainSG" value="Elemental Mastery" >
+      <label for="cryo">Cryo Damage Bonus</label><input id="cryo" type="radio" name="mainSG" value="Cryo Damage Bonus">
+      <label for="geo">Geo Damage Bonus</label><input id="geo" type="radio" name="mainSG" value="Geo Damage Bonus">
+      <label for="hydro">Hydro Damage Bonus</label><input id="hydro" type="radio" name="mainSG" value="Hydro Damage Bonus">
+      <label for="anemo">Anemo Damage Bonus</label><input id="anemo" type="radio" name="mainSG" value="Anemo Damage Bonus">
+      <label for="pyro">Pyro Damage Bonus</label><input id="pyro" type="radio" name="mainSG" value="Pyro Damage Bonus">
+      <label for="electro">Electro Damage Bonus</label><input id="electro" type="radio" name="mainSG" value="Electro Damage Bonus">
+      <label for="phys">Physical Damage Bonus</label><input id="phys" type="radio" name="mainSG" value="Physical Damage Bonus">
+    </div>
+    <div class=mainsH>
+      <label for="atkp">ATK%</label><input id="atkp" type="radio" name="mainSH" value="ATK %" >
+      <label for="hpp">HP%</label><input id="hpp" type="radio" name="mainSH" value="HP %">
+      <label for="defp">DEF%</label><input id="defp" type="radio" name="mainSH" value="DEF %">
+      <label for="emf">EM</label><input id="emf" type="radio" name="mainSH"H value="Elemental Mastery" >
+      <label for="critr">Crit Rate</label><input id="critr" type="radio" name="mainSH" value="Crit Rate">
+      <label for="critd">Crit Damage</label><input id="critd" type="radio" name="mainSH" value="Crit Damage">
+    </div>
+
+    <div class=currentS>
+
+      <label for="cs1">First Substat</label>
+      <select name="cs1" id="cs1">
+        <option value="ATK %">ATK%</option>
+        <option value="ATK">ATK</option>
+        <option value="HP %">HP%</option>
+        <option value="HP">HP</option>
+        <option value="DEF %">DEF%</option>
+        <option value="DEF">DEF</option>
+        <option value="Energy Recharge">ER%</option>
+        <option value="Elemental Mastery">EM</option>
+        <option value="Crit Rate">Crit Rate</option>
+        <option value="Crit Damage">Crit Damage</option>
+      </select>
+      <label for="cs1v">Value</label>
+      <input id="cs1v" type="number" placeholder=0>
+
+      <label for="cs2">Second Substat</label>
+      <select name="cs2" id="cs2">
+        <option value="ATK %">ATK%</option>
+        <option value="ATK">ATK</option>
+        <option value="HP %">HP%</option>
+        <option value="HP">HP</option>
+        <option value="DEF %">DEF%</option>
+        <option value="DEF">DEF</option>
+        <option value="Energy Recharge">ER%</option>
+        <option value="Elemental Mastery">EM</option>
+        <option value="Crit Rate">Crit Rate</option>
+        <option value="Crit Damage">Crit Damage</option>
+      </select>
+      <label for="cs2v">Value</label>
+      <input id="cs2v" type="number" placeholder=0>
+
+      <label for="cs3">Third Substat</label>
+      <select name="cs3" id="cs3">
+        <option value="ATK %">ATK%</option>
+        <option value="ATK">ATK</option>
+        <option value="HP %">HP%</option>
+        <option value="HP">HP</option>
+        <option value="DEF %">DEF%</option>
+        <option value="DEF">DEF</option>
+        <option value="Energy Recharge">ER%</option>
+        <option value="Elemental Mastery">EM</option>
+        <option value="Crit Rate">Crit Rate</option>
+        <option value="Crit Damage">Crit Damage</option>
+      </select>
+      <label for="cs3v">Value</label>
+      <input id="cs3v" type="number" placeholder=0>
+
+      <label for="cs4">Fourth Substat</label>
+      <select name="cs4" id="cs4">
+        <option value="none">none</option>
+        <option value="ATK %">ATK%</option>
+        <option value="ATK">ATK</option>
+        <option value="HP %">HP%</option>
+        <option value="HP">HP</option>
+        <option value="DEF %">DEF%</option>
+        <option value="DEF">DEF</option>
+        <option value="Energy Recharge">ER%</option>
+        <option value="Elemental Mastery">EM</option>
+        <option value="Crit Rate">Crit Rate</option>
+        <option value="Crit Damage">Crit Damage</option>
+      </select>
+      <label for="cs4v">Value</label>
+      <input id="cs4v" type="number" placeholder=0>
+    </div>
+
+
+
     <div>
-      <label for="customname">Enter custom name:</label>
-      <input id="customname" type="text" placeholder="">
+      <button class="generate">Generate Artifact</button>
     </div>
     <div>
-      <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
-      <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+      <button class="level">+4</button>
     </div>
-    <div>
-      <button class="normalButton">Generate random story</button>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
     <p class="story"></p>
 
