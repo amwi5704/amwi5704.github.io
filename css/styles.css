@@ -2,7 +2,7 @@
   body {
     padding: 60px;
     background-color: #6A69A3;
-    background-image: url("../img/clo1.png");
+    background-image: url("../img/cloub5.png");
   }
   img {
     border: 2px solid #D1B8E5;
@@ -11,6 +11,15 @@
     width: 400px;
     height:auto;
   }
+  .banner{
+    height: auto;
+    width: 134.5px;
+    grid-column: 6;
+    grid-row: 1/5;
+
+    padding: 10px;
+  }
+
   .content {
     background-color: inherit;
     padding: 50px;
@@ -41,9 +50,12 @@
     grid-row: 4;
   }
   .head{
-    padding: 10px;
-    grid-column: 4/6;
+    padding: 50px;
+    grid-column: 1/3;
     grid-row: 1/2;
+  }
+  .bg{
+    border: 3px solid #6A69A3;
   }
   .nav {
       padding: 10px;
@@ -53,25 +65,26 @@
   .box {
       display: grid;
 
-        border: 3px solid #6A69A3;
+      /*  border: 3px solid #6A69A3;*/
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
 
-      background-image: url("../img/cl2.png");
+      background-image: url("../img/cloub4.png");
       gap: 10px;
       padding: 20px;
   }
   .box2 {
       display: grid;
 
-        border: 3px solid #6A69A3;
+      /*  border: 3px solid #6A69A3;*/
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
 
-      background-image: url("../img/cl2.png");
+      background-image: url("../img/cloub4.png");
       gap: 10px;
       padding: 20px;
   }
+
 
 }
 
@@ -80,7 +93,7 @@
 
       padding: 10px;
     background-color: #6A69A3;
-    background-image: url("../img/clo1.png");
+    background-image: url("../img/cloub5.png");
 
   }
 
@@ -91,6 +104,15 @@
     width: 300px;
     height:auto;
   }
+  .banner{
+    height: auto;
+    width: 100px;
+    grid-column: 1/2;
+    grid-row: 3/6;
+
+    padding: 10px;
+  }
+
   .content {
     background-color: inherit;
     padding: 50px;
@@ -100,19 +122,19 @@
   .head{
     padding: 10px;
     grid-column: 1/5;
-    grid-row: 2/3;
+    grid-row: 1/2;
   }
   .photo {
 
     padding: 10px;
-    grid-column: 1/5;
-    grid-row: 3/8;
+    grid-column: 2/5;
+    grid-row: 3/6;
 justify-content: center;
   }
   .photos {
       padding: 10px;
       grid-column: 1/5;
-      grid-row: 4/8;
+      grid-row: 3/6;
   justify-content: center;
   }
   .photos2 {
@@ -130,16 +152,16 @@ justify-content: center;
   .box {
     display: grid;
 
-          background-image: url("../img/cl2.png");
+          background-image: url("../img/cloub4.png");
       border: 3px solid #6A69A3;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
       padding: 20px;
   }
   .box2 {
     display: grid;
 
-          background-image: url("../img/cl2.png");
+          background-image: url("../img/cloub4.png");
       border: 3px solid #6A69A3;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -148,14 +170,14 @@ justify-content: center;
   .bio{
     padding: 10px;
     grid-column: 1/5;
-    grid-row: 3/4;
+    grid-row: 2/3;
   }
 }
 
 h1 {
   color: #3e2d57;
 
-  font-size: 40px;
+  font-size: 42px;
   font-family: 'Merriweather Sans', sans-serif;
 }
 h2 {
@@ -183,7 +205,7 @@ p {
   font-family: 'Baskervville', serif;
 }
 a:link {
-  color: #93BDFC;
+  color: #6A69A3;
   text-decoration: none;
   font-size: 22px;
 }
@@ -194,16 +216,11 @@ a:hover {
   font-size: 22px;
 }
 
-a:visited {
-  color: #D1B8E5;
-  text-decoration: none;
-  font-size: 22px;
-}
 
 .normal-button {
 border-radius: 5px;
   padding: 10px 60px;
-background-color: #93BDFC;
+background-color: #6A69A3;
   font-family: 'Baskervville', serif;
   font-size: 24px;
 }
