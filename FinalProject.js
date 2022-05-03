@@ -2,8 +2,17 @@ const button = document.querySelector('.generate');
 const sand = document.querySelector('.mainsS');
 const gob = document.querySelector('.mainsG');
 const ha = document.querySelector('.mainsH');
+const hpp = document.querySelector('.hp');
+const attt = document.querySelector('.at');
 const atype = document.querySelector('.atype');
 const level = document.querySelector('.level');
+let mainstat = document.querySelector(".mainstat");
+let lv = document.querySelector(".lv");
+let s1 = document.querySelector(".s1");
+let s2 = document.querySelector(".s2");
+let s3 = document.querySelector(".s3");
+let s4 = document.querySelector(".s4");
+
 
 function randomValueFromArray(array){
   const random = Math.floor(Math.random()*array.length);
@@ -30,6 +39,8 @@ atype.addEventListener('click', check);
 function check(){
 if(document.getElementById("feather").checked) {
     console.log('plume');
+    attt.style.visibility = 'visible';
+    hpp.style.visibility = 'hidden';
     ha.style.visibility = 'hidden';
     gob.style.visibility = 'hidden';
     sand.style.visibility = 'hidden';
@@ -39,24 +50,33 @@ else if(document.getElementById("flower").checked) {
     ha.style.visibility = 'hidden';
     gob.style.visibility = 'hidden';
     sand.style.visibility = 'hidden';
+
+    hpp.style.visibility = 'visible';
+    attt.style.visibility = 'hidden';
 }
 else if(document.getElementById("sands").checked) {
     sand.style.visibility = 'visible';
     console.log('timepiece');
     ha.style.visibility = 'hidden';
     gob.style.visibility = 'hidden';
+    attt.style.visibility = 'hidden';
+    hpp.style.visibility = 'hidden';
 }
 else if(document.getElementById("goblet").checked) {
     gob.style.visibility = 'visible';
     console.log('cup');
     sand.style.visibility = 'hidden';
     ha.style.visibility = 'hidden';
+    attt.style.visibility = 'hidden';
+    hpp.style.visibility = 'hidden';
 }
 else if(document.getElementById("hat").checked) {
     ha.style.visibility = 'visible';
     console.log('circlit');
     sand.style.visibility = 'hidden';
     gob.style.visibility = 'hidden';
+    attt.style.visibility = 'hidden';
+    hpp.style.visibility = 'hidden';
 }}
 
 let artifact = {
@@ -135,6 +155,7 @@ artifact = {
   "lv": 0
 };
 console.log(artifact);
+display();
 }
 
 level.addEventListener('click', levelup);
@@ -150,6 +171,7 @@ function levelup(){
   else{
     plusFour();
   };
+  display()
 }
 
 function addFourthStat(){
@@ -262,4 +284,19 @@ function plusFour(){
     artifact.sub4v = subv;;
   };
   console.log(artifact);
-}
+
+};
+
+function display(){
+  console.log('display');
+    mainstat.textContent = artifact.mainStat;
+
+      lv.textContent = "+" +artifact.lv;
+      s1.textContent = artifact.sub1 + " " + artifact.sub1v;
+
+      s2.textContent = artifact.sub2 + " " + artifact.sub2v;
+
+      s3.textContent = artifact.sub3 + " " + artifact.sub3v;
+
+      s4.textContent = artifact.sub4 + " " + artifact.sub4v;
+};

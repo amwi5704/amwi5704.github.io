@@ -9,48 +9,38 @@
     <script defer src="./FinalProject.js" charset="utf-8" async></script>
 
     <title>Genshin Artifact Simulatior</title>
-
-    <style>
-
-    body {
-      font-family: helvetica, sans-serif;
-      width: 350px;
-    }
-
-    label {
-      font-weight: bold;
-    }
-
-    div {
-      padding-bottom: 20px;
-    }
-
-    input[type="text"] {
-      padding: 5px;
-      width: 150px;
-      background-color: #D1B8E5;
-    }
-    p {
-      visibility: hidden;
-      color: #6A69A3;
-      border-radius: 5px;
-      border-color: #93BDFC;
-      border-width: medium;
-      font-family: 'Baskervville', serif;
-    }
-
-    </style>
   </head>
-
   <body>
+    <div class=box>
+      <div class=intro>
+    <h1> Genshin Artifact Simulator </h1>
+    <p> Fill in the stats of that new artifact you just got and see how it rolls! </p>
+    <br>
+    <br>
+    <h3> Artifact Type </h3>
+
     <div class='atype'>
-      <label for="feather">Feather</label><input id="feather" type="radio" name="atype" value="feather">
-      <label for="flower">Flower</label><input id="flower" type="radio" name="atype" value="flower">
-      <label for="sands">Sands</label><input id="sands" type="radio" name="atype" value="sands">
-      <label for="goblet">Goblet</label><input id="goblet" type="radio" name="atype" value="goblet">
-      <label for="hat">Hat</label><input id="hat" type="radio" name="atype" value="hat">
+      <label for="flower">Flower of Life</label><input id="flower" type="radio" name="atype" value="flower">
+      <label for="feather">Plume of Death</label><input id="feather" type="radio" name="atype" value="feather">
+      <label for="sands">Sands of Eon</label><input id="sands" type="radio" name="atype" value="sands">
+      <label for="goblet">Goblet of Eonothem</label><input id="goblet" type="radio" name="atype" value="goblet">
+      <label for="hat">Circlit of Logos</label><input id="hat" type="radio" name="atype" value="hat">
     </div>
+
+
+  </div>
+  <div class="ms">
+    <h3> Artifact Main Stat </h3>
+    <div class="hp">
+
+              <label for="hp">HP</label><input id="hp" type="radio" name="mainSHP" value="HP" checked>
+    </div>
+    <div class=at>
+            <label for="atk">ATK</label><input id="atk" type="radio" name="mainSA" value="ATK" checked>
+    </div>
+
     <div class=mainsS>
+
       <label for="atkp">ATK%</label><input id="atkp" type="radio" name="mainSS" value="ATK %" >
       <label for="hpp">HP%</label><input id="hpp" type="radio" name="mainSS" value="HP %">
       <label for="defp">DEF%</label><input id="defp" type="radio" name="mainSS" value="DEF %">
@@ -58,8 +48,8 @@
       <label for="erp">ER%</label><input id="erp" type="radio" name="mainSS" value="Energy Recharge %">
     </div>
     <div class=mainsG>
-      <label for="atkp">ATK%</label><input id="atkp" type="radio" name="mainSG" value="ATK %" >
       <label for="hpp">HP%</label><input id="hpp" type="radio" name="mainSG" value="HP %">
+      <label for="atkp">ATK%</label><input id="atkp" type="radio" name="mainSG" value="ATK %" >
       <label for="defp">DEF%</label><input id="defp" type="radio" name="mainSG" value="DEF %">
       <label for="emf">EM</label><input id="emf" type="radio" name="mainSG" value="Elemental Mastery" >
       <label for="cryo">Cryo Damage Bonus</label><input id="cryo" type="radio" name="mainSG" value="Cryo Damage Bonus">
@@ -71,17 +61,19 @@
       <label for="phys">Physical Damage Bonus</label><input id="phys" type="radio" name="mainSG" value="Physical Damage Bonus">
     </div>
     <div class=mainsH>
+
+      <label for="defp">DEF%</label><input id="defp" type="radio" name="mainSH" value="DEF %">
       <label for="atkp">ATK%</label><input id="atkp" type="radio" name="mainSH" value="ATK %" >
       <label for="hpp">HP%</label><input id="hpp" type="radio" name="mainSH" value="HP %">
-      <label for="defp">DEF%</label><input id="defp" type="radio" name="mainSH" value="DEF %">
       <label for="emf">EM</label><input id="emf" type="radio" name="mainSH"H value="Elemental Mastery" >
       <label for="critr">Crit Rate</label><input id="critr" type="radio" name="mainSH" value="Crit Rate">
       <label for="critd">Crit Damage</label><input id="critd" type="radio" name="mainSH" value="Crit Damage">
     </div>
-
+  </div>
     <div class=currentS>
 
-      <label for="cs1">First Substat</label>
+        <h3> Artifact Substats at 0 </h3>
+      <label for="cs1">Substat 1</label>
       <select name="cs1" id="cs1">
         <option value="ATK %">ATK%</option>
         <option value="ATK">ATK</option>
@@ -96,8 +88,8 @@
       </select>
       <label for="cs1v">Value</label>
       <input id="cs1v" type="number" placeholder=0>
-
-      <label for="cs2">Second Substat</label>
+      <br>
+      <label for="cs2">Substat 2</label>
       <select name="cs2" id="cs2">
         <option value="ATK %">ATK%</option>
         <option value="ATK">ATK</option>
@@ -112,8 +104,8 @@
       </select>
       <label for="cs2v">Value</label>
       <input id="cs2v" type="number" placeholder=0>
-
-      <label for="cs3">Third Substat</label>
+      <br>
+      <label for="cs3">Substat 3</label>
       <select name="cs3" id="cs3">
         <option value="ATK %">ATK%</option>
         <option value="ATK">ATK</option>
@@ -128,8 +120,8 @@
       </select>
       <label for="cs3v">Value</label>
       <input id="cs3v" type="number" placeholder=0>
-
-      <label for="cs4">Fourth Substat</label>
+      <br>
+      <label for="cs4">Substat 4</label>
       <select name="cs4" id="cs4">
         <option value="none">none</option>
         <option value="ATK %">ATK%</option>
@@ -147,12 +139,22 @@
       <input id="cs4v" type="number" placeholder=0>
     </div>
 
+    <div class="display">
+      <h4> Artifact of Wonder </h4>
+      <br>
+      <br>
+      <h2 class='mainstat'> MAIN </h2>
+      <h6 class='lv'>&nbsp; lv </h6>
 
+      <p class='s1'> stat 1 </p>
+      <p class='s2'> stat 1 </p>
+      <p class='s3'> stat 1 </p>
+      <p class='s4'> stat 1 </p>
 
-    <div>
-      <button class="generate">Generate Artifact</button>
     </div>
-    <div>
+
+    <div class="butts">
+      <button class="generate">Generate Artifact</button>
       <button class="level">+4</button>
     </div>
 
@@ -176,7 +178,7 @@
 
     <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
     <p class="story"></p>
-
+  </div>
 
 
   </body>
