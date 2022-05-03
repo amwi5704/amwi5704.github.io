@@ -199,8 +199,9 @@ h6 {
   font-family: 'Merriweather Sans', sans-serif;
 }
 p {
-  color: #6A69A3;
+  color:#3e2d57;
   font-family: 'Baskervville', serif;
+  font-size: 18px;
 }
 a:link {
   color: #6A69A3;
